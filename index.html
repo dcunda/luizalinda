@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada Linda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f7e6f8; /* Um rosa bem clarinho */
+            color: #4a2155; /* Um tom de roxo escuro para o texto */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Largura do contêiner principal */
+            width: 100%;
+        }
+
+        h1 {
+            color: #8c2b9b; /* Um roxo mais vibrante para o título */
+            margin-bottom: 25px;
+            font-size: 2.5em;
+        }
+
+        /* Novo contêiner para as fotos ficarem lado a lado */
+        .photos-container {
+            display: flex; /* Habilita o Flexbox */
+            justify-content: center; /* Centraliza as fotos horizontalmente */
+            gap: 20px; /* Espaço entre as fotos */
+            margin-bottom: 30px; /* Espaço abaixo das fotos */
+            flex-wrap: wrap; /* Permite que as fotos quebrem para a linha de baixo em telas pequenas */
+        }
+
+        .photo-placeholder {
+            width: 200px; /* Ajustei a largura para caberem duas com espaçamento */
+            height: 200px; /* Altura igual à largura para manter a proporção */
+            background-color: #e0b0e5; /* Um roxo claro para o placeholder se a imagem não carregar */
+            border-radius: 10%; /* Borda mais arredondada como você queria */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Garante que a imagem se ajuste */
+            border: 5px solid #8c2b9b; /* Borda ao redor da foto */
+            flex-shrink: 0; /* Evita que as fotos encolham muito em telas pequenas */
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+            border-radius: 10%; /* Aplica o border-radius na imagem também */
+        }
+
+        .photo-placeholder p {
+            display: none; /* Esconde o texto "Sua foto vai aparecer aqui!" */
+        }
+
+        .message {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #6a4c70;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tu é a mulher mais linda do mundo!</h1>
+        <div class="photos-container">
+            <div class="photo-placeholder">
+                <img src="luiza.jpg" alt="Minha Namorada Linda">
+            </div>
+            <div class="photo-placeholder">
+                <img src="luizalindatranca.jpeg" alt="Minha Namorada Linda">
+            </div>
+        </div>
+        <p class="message">Homem mais sortudo que eu não existe, te amo amor!</p>
+    </div>
+</body>
+</html>
